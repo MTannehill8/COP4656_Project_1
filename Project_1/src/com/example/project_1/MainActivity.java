@@ -1,4 +1,5 @@
 package com.example.project_1;
+import Data.GameData;
 
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
@@ -14,6 +15,9 @@ import android.os.Build;
 
 public class MainActivity extends ActionBarActivity {
 
+	public static final int TOP_LEFT = 0;
+	GameData gameData;
+	boolean player_1 = true;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -43,8 +47,17 @@ public class MainActivity extends ActionBarActivity {
 			
 			@Override
 			public void onClick(View v) {
-				//if blank fill in graphic
-				//else do nothing
+				
+				if(gameData.emptySquare[TOP_LEFT])			//if empty square then fill with X or O
+				{
+					if(player_1)
+					{
+						
+					}
+					//put in X
+					//else put in O
+				}
+				
 				
 			}
 		});

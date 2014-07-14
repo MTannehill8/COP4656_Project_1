@@ -13,56 +13,15 @@
         android:id="@+id/tvStatus"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/btnBottom_left"
+        android:layout_alignLeft="@+id/line04"
+        android:layout_alignRight="@+id/line04"
         android:layout_below="@+id/btnBottom_left"
-        android:gravity="center"
-        android:text="Press Play to Start"
         android:layout_marginTop="5dp"
+        android:text="Press Play to Start"
         android:textAlignment="center"
+        android:gravity="center"
         android:textColor="#CDC092"
         android:textSize="20sp" />
-
-    <Button
-        android:id="@+id/btnOnePlayer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/tvStatus"
-        android:layout_below="@+id/tvStatus"
-        android:layout_marginTop="5dp"
-        android:enabled="false"
-        android:textColor="#CDC092"
-        android:text="1 Player" />
-
-    <Button
-        android:id="@+id/btnTwoPlayer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/btnBottom_right"
-        android:layout_below="@+id/tvStatus"
-        android:textColor="#CDC092"
-        android:layout_marginTop="5dp"
-        android:text="2 Players" />
-
-    <TextView
-        android:id="@+id/tvAuthor"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/btnOnePlayer"
-        android:layout_alignParentBottom="true"
-        android:gravity="center"
-        android:textColor="#CDC092"
-        android:text="created by: Matthew Tannehill"
-        android:textAlignment="center" />
-
-    <Button
-        android:id="@+id/btnPlayNewGame"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/btnOnePlayer"
-        android:layout_alignRight="@+id/btnTwoPlayer"
-        android:layout_below="@+id/btnOnePlayer"
-        android:textColor="#CDC092"
-        android:text="Play New Game" />
 
     <Button
         android:id="@+id/btnTop_left"
@@ -71,6 +30,7 @@
         android:layout_alignTop="@+id/btnTop_center"
         android:layout_toLeftOf="@+id/line01"
         android:layout_marginRight="5dp"
+        android:visibility="invisible" 
         android:enabled="false" />
     
     <Button
@@ -79,6 +39,7 @@
         android:layout_height="80dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:visibility="invisible" 
         android:enabled="false" />
 
     <Button
@@ -88,6 +49,7 @@
         android:layout_alignTop="@+id/btnTop_center"
         android:layout_toRightOf="@+id/line02"
         android:layout_marginLeft="5dp"
+        android:visibility="invisible" 
         android:enabled="false" />
 
     <Button
@@ -97,6 +59,7 @@
         android:layout_alignLeft="@+id/btnTop_left"
         android:layout_below="@+id/line03"
         android:layout_marginTop="5dp"
+        android:visibility="invisible" 
         android:enabled="false" />
     
     <Button
@@ -105,6 +68,7 @@
         android:layout_height="80dp"
         android:layout_alignTop="@+id/btnCenter_left"
         android:layout_centerHorizontal="true"
+        android:visibility="invisible" 
         android:enabled="false" />
     
     <Button
@@ -113,6 +77,7 @@
         android:layout_height="80dp"
         android:layout_alignTop="@+id/btnCenter_left"
         android:layout_alignLeft="@+id/btnTop_right"
+        android:visibility="invisible" 
         android:enabled="false" />
     
     <Button
@@ -122,6 +87,7 @@
         android:layout_alignLeft="@+id/btnTop_left"
         android:layout_below="@+id/line04"
         android:layout_marginTop="5dp"
+        android:visibility="invisible" 
         android:enabled="false" />
     
     <Button
@@ -131,6 +97,7 @@
         android:layout_alignTop="@+id/btnBottom_left"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/line04"
+        android:visibility="invisible" 
         android:enabled="false" />
 
     <Button
@@ -139,6 +106,7 @@
         android:layout_height="80dp"
         android:layout_alignTop="@+id/btnBottom_left"
         android:layout_alignLeft="@+id/btnTop_right"
+        android:visibility="invisible" 
         android:enabled="false" />
 
     <Button
@@ -178,5 +146,138 @@
         android:layout_alignLeft="@+id/line03"
         android:layout_marginTop="5dp"
         android:background="#000000" />
+
+    <Button
+        android:id="@+id/btnPlayNewGame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvP1Score"
+        android:layout_alignLeft="@+id/line04"
+        android:layout_toLeftOf="@+id/btnResetScore"
+        android:text="Play New Game"
+        android:textColor="#CDC092"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btnResetScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnPlayNewGame"
+        android:layout_alignTop="@+id/btnPlayNewGame"
+        android:layout_toRightOf = "@+id/line01"
+        android:layout_toLeftOf="@+id/line02"
+        android:textColor="#CDC092"
+        android:textSize="15sp"
+        android:text="Reset Score" />
+
+    <Button
+        android:id="@+id/btnOnePlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnPlayNewGame"
+        android:layout_alignTop="@+id/btnPlayNewGame"
+        android:layout_alignRight="@+id/line04"        
+        android:layout_toRightOf="@+id/btnResetScore"        
+        android:text="Make 1 Player"
+        android:textSize="15sp"
+        android:textColor="#CDC092"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btnTwoPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnPlayNewGame"
+        android:layout_alignTop="@+id/btnPlayNewGame"
+        android:layout_alignRight="@+id/line04"        
+        android:layout_toRightOf="@+id/btnResetScore"
+        android:text="Make 2 Players"
+        android:textSize="15sp"
+        android:visibility="visible"
+        android:textColor="#CDC092" />
+
+    <TextView
+        android:id="@+id/tvP1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/line04"
+        android:layout_alignRight="@+id/btnBottom_left"
+        android:layout_below="@+id/tvStatus"
+        android:text="Player 1"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="#CDC092" />
+
+    <TextView
+        android:id="@+id/tvP2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnBottom_right"
+        android:layout_alignRight="@+id/line04"
+        android:layout_below="@+id/tvStatus"
+        android:text="Player 2"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="#CDC092" />
+
+    <TextView
+        android:id="@+id/tvP2Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnBottom_right"
+        android:layout_alignRight="@+id/line04"
+        android:layout_below="@+id/tvP2"
+        android:text="0"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#CDC092" />
+
+    <TextView
+        android:id="@+id/tvTie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/btnBottom_center"
+        android:layout_below="@+id/tvStatus"
+        android:layout_toRightOf="@+id/line01"
+        android:textColor="#CDC092"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:text="Tie" />
+
+    <TextView
+        android:id="@+id/tvP1Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/line04"
+        android:layout_alignRight="@+id/btnBottom_left"
+        android:layout_below="@+id/tvP1"
+        android:textColor="#CDC092"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/tvTieScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvTie"
+        android:layout_alignRight="@+id/tvTie"
+        android:layout_below="@+id/tvTie"
+        android:textColor="#CDC092"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/tvAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnPlayNewGame"
+        android:layout_below="@+id/btnResetScore"
+        android:layout_alignRight="@+id/btnTwoPlayer"
+        android:gravity="center"
+        android:text="created by: Matthew Tannehill"
+        android:textAlignment="center"
+        android:textColor="#CDC092" />
 
 </RelativeLayout>
